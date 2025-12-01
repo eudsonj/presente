@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Surpresa Romântica 💕</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+      color: #333;
+      text-align: center;
+    }
+
+    header {
+      padding: 50px 20px;
+      color: white;
+      font-size: 2.5em;
+      font-weight: bold;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+    }
+
+    .card {
+      background: white;
+      border-radius: 20px;
+      padding: 30px;
+      margin: 20px auto;
+      max-width: 600px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .card h2 {
+      color: #e75480;
+      margin-bottom: 15px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 25px;
+      margin-top: 20px;
+      background: #e75480;
+      color: white;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #ff99ac;
+      transform: scale(1.1);
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      font-size: 0.9em;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>✨ Surpresa para Você ✨</header>
+
+  <div class="card">
+    <h2>Oi, meu amor ❤️</h2>
+    <p>Este site é só para te lembrar o quanto você é especial para mim.</p>
+    <p>Você é a melhor parte dos meus dias 🌸</p>
+    <a href="#" class="btn" onclick="mostrarMensagem()">Clique aqui</a>
+    <p id="mensagem" style="margin-top:20px; font-size:1.2em; color:#e75480;"></p>
+  </div>
+
+  <footer>Feito com muito carinho 💌</footer>
+
+  <script>
+    function mostrarMensagem() {
+      const msg = document.getElementById("mensagem");
+      msg.innerHTML = "Eu te amo infinitamente 💕💫";
+    }
+  </script>
+</body>
+</html>
